@@ -1,0 +1,35 @@
+.Nav{
+    display: flex;
+   justify-content: space-between;
+   padding: 15px;
+   text-decoration: none;
+   margin: 0 50px 0 50px;
+   z-index: 50px ;
+}
+.Nav ul{
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    
+    gap: 50px;
+    /* background-color: bisque; */
+   
+}
+.Nav li{
+    text-decoration: none;
+    color: #ffff;
+    justify-content: space-between;
+}
+/* li a{
+    font-size: 2rem;
+} */
+.Nav a{
+    text-decoration: none;
+}
+.Nav ul:hover{
+    color: rgb(158, 105, 40);
+}
+.Nav button{
+    color: #ffff;
+    background-color: #01614e;
+}

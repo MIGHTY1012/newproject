@@ -23,9 +23,9 @@
 /* li a{
     font-size: 2rem;
 } */
-.Nav a{
+/* .Nav a{
     text-decoration: none;
-}
+} */
 .Nav ul:hover{
     color: rgb(158, 105, 40);
 }

@@ -1,3 +1,9 @@
-export default function Page (){
-    return <h1> contact me </h1>
+export default function Contact(){
+    return(
+        <section>
+            <div>
+                vhvsdychj
+            </div>
+        </section>
+    )
 }

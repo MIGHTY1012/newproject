@@ -97,8 +97,7 @@ export default function Navbar() {
                         <Link
                          href="/properties">Properties </Link>
                         <Link
-                             href="/about">About
-                        </Link>
+                             href="/about">About</Link>
                         <Link
                             href="/contact">Contact</Link>
                         

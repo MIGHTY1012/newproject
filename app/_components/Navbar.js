@@ -63,7 +63,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
-import logo from "@/public/RST-LOGO.png";
+import logo from "@/public/image/Mgtlg.png";
 import styles from '@/app/_components/Nav.module.css'
 import Top from '@/app/_components/Top';
 import Link from "next/link";
@@ -80,7 +80,7 @@ export default function Navbar() {
             <Top />
             <nav className={styles.Nav}>
                 <div className="flex items-center justify-between">
-                    <Image src={logo} alt="Villa logo" width={150} height={70} />
+                    <Image src={logo} alt="Villa logo" width={50} height={50} />
                     <div className="md:hidden">
                         {menuOpen ? (
                             <IoClose className="text-2xl cursor-pointer" onClick={toggleMenu} />
@@ -93,7 +93,7 @@ export default function Navbar() {
                 <div className={`md:flex ${menuOpen ? "block" : "hidden"} md:block`}>
                     <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-6">
                         <Link
-                            href="/">Home</Link>
+                            href="/">Home </Link>
                         <Link
                          href="/properties">Properties </Link>
                         <Link
@@ -101,7 +101,8 @@ export default function Navbar() {
                         <Link
                             href="/contact">Contact</Link>
                         
-                        <button className="bg-blue-500 text-white px-4 py-2 rounded">Add Properties</button>
+                       <Link href="/add"><button className="bg-blue-500 text-white px-4 py-2 rounded">Add Properties</button>
+                       </Link> 
                         
                     </ul>
                 </div>

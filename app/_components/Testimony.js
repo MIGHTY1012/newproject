@@ -20,7 +20,9 @@ const Testimony = () => {
   };
 
   return (   
-    <div className="relative w-full h-96  rounded-2xl mx-10 py-5 bg-green-800 bg-opacity-  bg-right-top-10 drop-shadow-2xl overflow-visible" >
+    <main className='m-auto'>
+
+    <div className="relative w-full h-96  rounded-2xl mx-10 py-5 bg-green-800 bg-  bg-right-top-10 drop-shadow-2xl overflow-visible" >
     <div className="absolute items-center   left-2/3 justify-center " >
         <Image src={Agt1}
         width={500}
@@ -33,6 +35,7 @@ const Testimony = () => {
         </div>
       </div>
     </div>
+    </main>
   );
 };
 

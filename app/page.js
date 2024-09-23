@@ -23,6 +23,7 @@ import { ImLocation, } from "react-icons/im";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Testimony from '@/app/_components/Testimony'
+import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
@@ -48,18 +49,21 @@ export default function Home() {
           <Image src={Img2} alt="Property" className="image" />
         </div>
       </div>
-      <section className="w-[100%] my-10 gap-10 m-auto "  >
-        <div className="py-10 bg-white">
-          
+      <section className="w-[100%] my-10 gap-10 m-0 "  >
+        <div className="py-10 bg-white mx">
+          <div className="mx-10">
+
             <h2 className=" text-lg text-red-400 text-center " > Best Choice</h2>
             <p className="flex space-x-4  text-2xl font-bold justify-between mx-10  text-green-800 text-">
               Popular Properties.
               <span className="space-x-100 text-black text-sm font-normal  flex md:ml-4   flex-row justify-between items-center">
                 Explore all <IoIosArrowRoundForward className="align-center bottom-5 text-lg" /> </span>
             </p>
+          </div>
+          
         </div>
 
-        <div className="grid grid-cols-3 space-x-10 mb-10 ">
+        <div className="grid grid-cols-3 space-x-10 mb-10 mx-10 ">
           <div className=" text-center  hover:scale-2 border-2 border-solid bg-white relative  hover:transform hover:scale-110 transition-transform duration-300 rounded-2xl drop-shadow-2xl">
             <Image
               src={Img4}
@@ -115,9 +119,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative mx-10">
+      <section className="relative m-auto">
             <Image src={Img6} alt="House Image" className="w-full h-[50%] rounded-2xl"  />
-           <div className="absolute inset-0 flex items-center justify-center">
+           <div className="absolute inset-0 flex items-center justify-center mx-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-opacity-75 p-6 rounded-lg shadow-lg">
             
             <div className="bg-white p-6 rounded-lg shadow-lg my-10  text-black hover:text-white  hover:bg-green-800 hover:transform hover:scale-110 transition-transform duration-300">
@@ -374,16 +378,19 @@ export default function Home() {
       </div>
      </section>
 
-     <section className=" mx-10 flex w-full  gap-10 bg-red-100">
+     <section className=" mx-10 flex w-full  gap-10 ">
       <div className="py-15 items-center w-[60%] justify-center h-[400px]">
        <Testimony/>
       </div>
-      <div className="w-[40%] h-[200px] text-right  py-10 px-10 my-20 bottom mx-10 bg-white drop-shadow-2xl bg-opacity-50">
-        <h1 className="text-sm text-red-500 ml-0">Testimonial  </h1>
-        <p>Reviews from our <br/> happy Clients.</p>
-        <span>Huge number of propreties availabe here for buy, sell and Rent. Also you find here co-living property so lots opportunity you have to choose here and enjoy.</span>
+      <div className="w-[40%] h-[200px] text-center  py-5 px-10 my-20 bottom mx-10 bg-white drop-shadow-2xl bg-opacity-50 hover:bg-green-700 hover:text-white hover:font-bold rounded-2xl">
+        <h1 className=" text-red-500 ml-0 text-center py-2 font-bold text-xl ">Testimonial  </h1>
+        <p className="text-sm">Reviews from our  happy Clients.</p>
+        <span className="text-xs font">Huge number of propreties availabe here for buy, sell and Rent. Also you find here co-living property so lots opportunity you have to choose here and enjoy.</span>
       </div>
      </section>
+     <div className="my-10">
+      <Footer/>
+     </div>
 
     </main>
   );
